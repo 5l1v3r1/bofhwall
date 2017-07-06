@@ -18,6 +18,10 @@ Default Port: 8080
 - Python 3
 - Notepad++
 
+### Credits:
+- What is Bastard Operator From Hell - [Link](https://en.wikipedia.org/wiki/Bastard_Operator_From_Hell)
+- BOFH Author and Official Site: [Simon Travaglia](http://www.bofharchive.com/#about)    
+
 ### Tested on:
 Windows 10 v1703 (build 15063)  
 Raspberry Pi 3
