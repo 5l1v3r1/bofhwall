@@ -275,7 +275,7 @@ It was OK before you touched it.
 Bit rot
 U.S. Postal Service
 Your Flux Capacitor has gone bad.
-The Dilithium Cyrstals need to be rotated.
+The Dilithium Crystals need to be rotated.
 The static electricity routing is acting up...
 Traceroute says that there is a routing problem in the backbone.  It's not our problem.
 The co-locator cannot verify the frame-relay gateway to the ISDN server.

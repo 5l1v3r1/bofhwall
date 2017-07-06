@@ -20,7 +20,7 @@ import time
 
 #-----------------------
 # Change these settings only
-config_ip = '192.168.6.100' #If using IPv6 then on line 37 change "socket.AF_INET" to "socket.AF_INET6"
+config_ip = '127.0.0.1' #If using IPv6 then on line 37 change "socket.AF_INET" to "socket.AF_INET6"
 config_port = 8080
 #-----------------------
 config_file = "excuses.txt"
@@ -56,7 +56,7 @@ def start_server():
 
     #Start listening on socket
     soc.listen(10)
-    print('Socket now listening')
+    print('Socket now listening\r\n')
 
     # for handling task in separate jobs we need threading
     from threading import Thread
