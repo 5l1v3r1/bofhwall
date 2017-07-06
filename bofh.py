@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 """
-bofhwall
+bofhwall - build July 5 2017
+https://github.com/RomelSan/bofhwall
+
 Bastard Operator From Hell - Firewall
 This service listen in a port and send to the client a BOFH excuse.
 
-Use that IPTABLE rule for redirect all traffic incoming from all ports to this service.
+Use this IPTABLE rule to redirect all traffic incoming from all ports to this service.
 iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 1:65535 -j DNAT --to-destination HOST:PORT
 
-If you redirect to localhost, you need that:
+If you redirect to localhost, you need this:
 sysctl -w net.ipv4.conf.eth0.route_localnet=1
 
 => Bastard Operator From Hell everywhere.
@@ -19,8 +21,8 @@ import random
 import time
 
 #-----------------------
-# Change these settings only
-config_ip = '127.0.0.1' #If using IPv6 then on line 37 change "socket.AF_INET" to "socket.AF_INET6"
+# You can change the following:
+config_ip = '127.0.0.1' #If using IPv6 then on line 46 change "socket.AF_INET" to "socket.AF_INET6"
 config_port = 8080
 #-----------------------
 config_file = "excuses.txt"
