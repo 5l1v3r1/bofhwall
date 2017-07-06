@@ -33,12 +33,13 @@ bofh_collection = file.readlines()
 def send_random_bofh(conn, ip, port):
     pre_message = "Bastard Operator From Hell excuse is:\r\n"
     message =  random.choice(list(bofh_collection))
+    message = message.rstrip()
     message_full = pre_message + message
     try:
         conn.sendall(message_full.encode("utf-8"))  # send it to client
         conn.close()  # close connection
         print('Sent Message to ' + ip + ':' + port)
-        print('Message: ' + message)
+        print('Message: ' + message + "\r\n")
     except:
         print('Port probed, remote host will not take the message\r\n')
     
